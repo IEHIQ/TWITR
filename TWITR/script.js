@@ -8,8 +8,8 @@ function showMessages() {
     else
     {
         let words = tweetfield.value.split(' ');
-        const isbad = (elem) => elem.length > +maxlength;
-        if (words.some(isbad))
+        const isBad = (elem) => elem.length > +maxlength;
+        if (words.some(isBad))
         {
             errormsg.style.display = "block";
             for (let word of words)
