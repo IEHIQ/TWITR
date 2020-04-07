@@ -8,7 +8,8 @@ function showMessages() {
     else
     {
         let words = tweetfield.value.split(' ');
-        if (words.find((item) => {return (item.length > +maxlength)}))
+        const isbad = (elem) => elem.length > +maxlength;
+        if (words.some(isbad))
         {
             errormsg.style.display = "block";
             for (let word of words)
@@ -19,7 +20,7 @@ function showMessages() {
         else
         {
             errormsg.style.display = "none";
-            words.reduce((prev, curr, index, words) => 
+            let lastmsg = words.reduce((prev, curr, index, words) => 
             {
                 if (prev.length + curr.length + 1 > maxlength)
                 {
@@ -29,6 +30,8 @@ function showMessages() {
                 else
                     return (prev + ' ' + curr);
             })
+            if (lastmsg.endsWith(words[words.length - 1]))
+                addMessage(lastmsg, maxlength);
         }
     }
 }
