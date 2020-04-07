@@ -8,7 +8,7 @@ function showMessages() {
     else
     {
         let words = tweetfield.value.split(' ');
-        if (words.find((item) => {if (item.length > +maxlength) return true}))
+        if (words.find((item) => {return item.length > +maxlength}))
         {
             errormsg.style.display = "block";
             for (let word of words)
