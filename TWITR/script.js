@@ -30,7 +30,6 @@ function showMessages() {
                 else
                     return (prev + ' ' + curr);
             })
-            if (lastmsg.endsWith(words[words.length - 1]))
                 addMessage(lastmsg, maxlength);
         }
     }
