@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kelly Slab", sans-serif;
+    font-size: 30px;
+    color: #ffee15;
+}
+.tweetform {
+    width: 600px;
+    height: 500px;
+    background-color: #FF2715;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.title {
+    font-family: "Konstruktor", sans-serif;
+    font-size: 50px;
+}
+.textfield {
+    border: none;
+    border-radius: 5px;
+    background-color: #BE2715;
+    padding: 10px;
+    font-family: "Kelly Slab", sans-serif;
+    resize: none;
+    font-size: 20px;
+    -ms-overflow-style: none;
+}
+.textfield::-webkit-scrollbar {
+    width: 0;
+}
+.tweet {
+    font-size: 20px;
+    width: 580px;
+    height: 370px;
+}
+button {
+    width: 115px;
+    background-color: #ff5522;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Kelly Slab", sans-serif;
+    color: #f7f459;
+    float: right;
+}
+button:hover {
+    cursor: pointer;
+}
+::placeholder {
+    color: #FFAD17;
+    opacity: 1;
+}
+input {
+    width: 460px;
+}
+#messages {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+    width: 700px;
+}
+.message {
+    width: fit-content;
+    font-family: "Kelly Slab", sans-serif;
+    font-size: 20px;
+    color: #ffee15;
+    background-color: #FF2715;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+}
+.badword {
+    background-color: #55EB3F;
+    color: #1A313B;
+}
+.error {
+    font-family: "Konstruktor", sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    color: #FF2715;
+    display: none;
+}
+@font-face {
+    font-family: "Konstruktor";
+    src: url("fonts/Konstruktor_Regular.ttf");
+}
+@font-face {
+    font-family: "Kelly Slab";
+    src: url("fonts/KellySlab_Regular.ttf");
+}

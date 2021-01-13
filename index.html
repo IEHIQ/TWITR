@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ТВИТР</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<form class="tweetform">
+            <p class="title">
+                <img src="logo_small.png" alt="TWITR" title="TWITR">
+                ТВИТР
+            </p>
+			<div class="hide_scroll">
+				<textarea class="tweet textfield" type="text" name="textbox" placeholder="Докладывайте"></textarea>
+			</div>
+            <div class="buttonfield">
+                <input id="nums" class="textfield" type="text" name="nums" placeholder="Макс. кол-во символов сообщения">
+                <button type="button" onclick="showMessages()" id="button">Доложить</button>
+            </div>
+		</form>
+		<div class="error">В тексте есть неразделяемое слово(а). Оно(и) выделено <span class="badword">так</span>. Список слов >></div>
+		<div id="messages"></div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
